@@ -1,0 +1,17 @@
+* Scene
+	* Start point of the Game
+
+* Sprite2D
+	* Useful to show a background image 
+
+* Rich Text Label
+	* To display Texts
+	* creates a scrollbar automatically if too much text within the limited space
+	* BBCode - specify text alignments, color, font etc.
+	* BBCode works like markup
+	* Font requires external importation of font file
+
+* Label
+	* To display Text
+	* simpler than Rich Text Label
+	* Restart if mismatch occurs
