@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://drewkd8tp0e27"]
+[gd_scene load_steps=7 format=3 uid="uid://drewkd8tp0e27"]
 
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_cn15u"]
 [ext_resource type="Texture2D" uid="uid://yrlt5ip5dbo2" path="res://Assets/bkg.jpg" id="1_nj6ho"]
 [ext_resource type="FontFile" uid="uid://canumb2pr4axw" path="res://Assets/fonts/AnglicanText.ttf" id="2_jh2gj"]
 [ext_resource type="FontFile" uid="uid://b3geuse13cqgk" path="res://Assets/fonts/Borel-Regular.ttf" id="3_tnycy"]
+[ext_resource type="Script" path="res://Scripts/FontChanger.gd" id="5_6klg2"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_3wtmb"]
 font = ExtResource("2_jh2gj")
@@ -10,6 +12,7 @@ font_size = 70
 font_color = Color(1, 0.835294, 0.34902, 1)
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_cn15u")
 
 [node name="Bkg" type="Sprite2D" parent="."]
 position = Vector2(578, 326)
@@ -27,7 +30,7 @@ label_settings = SubResource("LabelSettings_3wtmb")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CheckButton" type="CheckButton" parent="."]
+[node name="FontChanger" type="CheckButton" parent="."]
 offset_left = 459.0
 offset_top = 361.0
 offset_right = 735.0
@@ -36,3 +39,4 @@ theme_override_fonts/font = ExtResource("3_tnycy")
 theme_override_font_sizes/font_size = 25
 text = "Change the Font"
 alignment = 1
+script = ExtResource("5_6klg2")
